@@ -6,7 +6,12 @@ html {
   --red: #fe2c2c;
   --week-day: #cccccc;
   --week-end: #f2f2f2;
+  --bg-color: #eeeeee;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
 }
 
 .calendar {
@@ -35,4 +40,18 @@ html {
 
 .month-and-year .year h1 {
   font-weight: normal;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+}
+
+.week-day {
+  width: 100%;
+  background-color: var(--week-day);
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: bold;
 }
