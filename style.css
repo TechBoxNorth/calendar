@@ -1,3 +1,38 @@
 * {
   margin: 0;
 }
+
+html {
+  --red: #fe2c2c;
+  --week-day: #cccccc;
+  --week-end: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calendar {
+  height: 650px;
+  width: 700px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.calendar-top {
+  background-color: var(--red);
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 15.4%;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 9px 9px 0 0;
+}
+
+.month-and-year {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.month-and-year .year h1 {
+  font-weight: normal;
+}
