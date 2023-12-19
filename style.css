@@ -55,3 +55,40 @@ body {
   padding: 0.8rem;
   font-weight: bold;
 }
+
+.month-days {
+  display: grid;
+  grid-template-columns: repeat(7, 14.05%);
+  gap: 2px;
+  text-align: center;
+  justify-content: center;
+}
+
+.day {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week-end {
+  background-color: var(--week-end);
+}
+
+.not-this-month {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.month-days .day h1 {
+  font-weight: normal;
+}
+
+.today h1 {
+  background-color: var(--red);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
